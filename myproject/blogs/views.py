@@ -16,28 +16,31 @@ def index(request):
     lastest = []
     suggestion = []
     # บทความแนะนำ ใช้ Queue
-    que = Queue()
+    suggestion_que = Queue()
     for i in blogs:
-        que.add(i)
-    mergeSort(que.data)  # ใช้ mergesort เรียงตามยอดview จาก น้อย->มาก
+        suggestion_que.add(i)
+    mergeSort(suggestion_que.data)  # ใช้ mergesort เรียงตามยอดview จาก น้อย->มาก
+    # เก็บข้อมูลบทความแนะนำเป็นคิว เรียงจากน้อยไปมาก
+
+    # เลือกเอาไปแสดงผล
     for i in range(3):
-        suggestion.append(que.pop())
+        suggestion.append(suggestion_que.pop())
 
     # บทความล่าสุด และ บทความยอดนิยม ใช้ stack
-    stack = Stack()
+    blog_stack = Stack()
 
     for i in blogs:
-        stack.add(i)
+        blog_stack.add(i)
 
     for i in range(2):
-        lastest.append(stack.pop())
+        lastest.append(blog_stack.pop())
 
     quick_sort(
-        0, stack.range() - 1, stack.data
+        0, blog_stack.range() - 1, blog_stack.data
     )  # ใช้ quicksort เรียงตามยอดview จาก น้อย->มาก
 
     for i in range(3):
-        popular.append(stack.pop())
+        popular.append(blog_stack.pop())
 
     # most views
     # popular = Blogs.objects.all().order_by('-views')[:3]
