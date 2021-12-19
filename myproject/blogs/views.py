@@ -8,6 +8,7 @@ from django.core.paginator import Paginator, EmptyPage, InvalidPage
 
 
 def index(request):
+    ################################################################
     categories = Category.objects.all()
     blogs = Blogs.objects.all()
     lastest = Blogs.objects.all().order_by('-pk')[:4]
