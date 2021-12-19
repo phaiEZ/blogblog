@@ -33,7 +33,7 @@
 
 <body>
     <div id="page-wrapper">
-        <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations">
+        <div id="page-container" class="sidebar-partial sidebar-visible-lg sidebar-no-animations" style="background-color: #53608d;">
             <!-- Main Sidebar -->
             <div id="sidebar">
                 <!-- Wrapper for scrolling functionality -->
@@ -60,6 +60,9 @@
                         <ul class="sidebar-nav">
                             <li>
                                 <a href="{% url 'panel'%}" class=" active"><i class="gi gi-stopwatch sidebar-nav-icon"></i><span class="sidebar-nav-mini-hide">ภาพรวม</span></a>
+                            </li>
+                            <li>
+                                <a href="/"></i><span style="padding-left: 30px;">Home</span></a>
                             </li>
                             <li class="sidebar-header">
                                 <span class="sidebar-header-options clearfix"><a href="javascript:void(0)" data-toggle="tooltip" title="Quick Settings"><i class="gi gi-settings"></i></a></span>
@@ -92,13 +95,13 @@
 
             <!-- Main Container -->
             <div id="main-container">
-                <header class="navbar navbar-default">
+                <header class="navbar navbar-default" style="background-color: #394263;">
                     <!-- Left Header Navigation -->
                     <ul class="nav navbar-nav-custom">
                         <!-- Main Sidebar Toggle Button -->
                         <li>
                             <a href="javascript:void(0)" onclick="App.sidebar('toggle-sidebar');this.blur();">
-                                <i class="fa fa-bars fa-fw"></i>
+                                <i class="fa fa-bars fa-fw" style="color: whitesmoke;"></i>
                             </a>
                         </li>
                         <!-- END Main Sidebar Toggle Button -->
@@ -142,7 +145,7 @@
                 <!-- END Header -->
 
                 <!-- Page content -->
-                <div id="page-content">
+                <div id="page-content" style="background-color: #53608d;">
                     <!-- Mini Top Stats Row -->
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">

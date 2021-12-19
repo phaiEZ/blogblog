@@ -89,7 +89,7 @@ body {
     font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #394263;
     font-size: 13px;
-    background-color: #222222;
+    background-color: #222222;/**********************************************************/
 }
 
 #page-container,
@@ -100,7 +100,7 @@ body {
 
 #page-container {
     width: 100%;
-    padding: 0;
+    padding: 0;/**********************************************************/
     margin: 0 auto;
     overflow-x: hidden;
     -webkit-transition: background-color 0.2s ease-out, opacity 0.3s ease-out;
@@ -110,7 +110,7 @@ body {
 #page-container,
 #sidebar,
 #sidebar-alt {
-    background-color: #394263;
+    background-color: #394263;/**********************************************************/
 }
 
 #sidebar,
@@ -260,16 +260,16 @@ header.navbar-default.navbar-fixed-bottom {
 }
 
 header.navbar-inverse.navbar-fixed-top {
-    border-bottom: 1px solid #394263;
+    border-bottom: 1px solid #394263;/**********************************************************/
 }
 
 header.navbar-inverse.navbar-fixed-bottom {
-    border-top: 1px solid #394263;
+    border-top: 1px solid #394263;/**********************************************************/
 }
 
 /* Header Nav */
 .navbar-default .navbar-nav > li > a {
-    color: #394263;
+    color: #394263;/**********************************************************/
 }
 
 .navbar-inverse .navbar-nav > li > a {
@@ -346,7 +346,7 @@ header.navbar-inverse.navbar-fixed-bottom {
 .nav.navbar-nav-custom > li.open > a,
 .nav.navbar-nav-custom > li > a:hover,
 .nav.navbar-nav-custom > li > a:focus {
-    background-color: #1bbae1;
+    background-color: #1bbae1;/**********************************************************/
     color: #ffffff;
 }
 
@@ -393,7 +393,7 @@ header.navbar-inverse.navbar-fixed-bottom {
 
 .navbar-form-custom .form-control:hover,
 .navbar-form-custom .form-control:focus {
-    background-color: #ffffff;
+    background-color: #47537a;/**********************************************************/
 }
 
 .navbar-form-custom .form-control:focus {
@@ -411,7 +411,7 @@ header.navbar-inverse.navbar-fixed-bottom {
 
 .navbar-inverse .navbar-form-custom .form-control:hover,
 .navbar-inverse .navbar-form-custom .form-control:focus {
-    background: #000000;
+    background: #000000;/**********************************************************/
     color: #ffffff;
 }
 
@@ -442,7 +442,7 @@ header.navbar-inverse.navbar-fixed-bottom {
     font-size: 18px;
     display: block;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(0, 0, 0, 0.15);/**********************************************************/
 }
 
 a.sidebar-brand:hover,
@@ -451,7 +451,7 @@ a.sidebar-title:hover,
 a.sidebar-title:focus {
     background-color: #1bbae1;
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none;/**********************************************************/
 }
 
 .sidebar-brand i,
@@ -475,7 +475,7 @@ a.sidebar-title:focus {
 /* Sidebar User */
 .sidebar-user {
     padding-left: 88px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1);/**********************************************************/
 }
 
 .sidebar-user-avatar {
@@ -485,13 +485,13 @@ a.sidebar-title:focus {
     padding: 2px;
     margin-left: -78px;
     border-radius: 34px;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.75);/**********************************************************/
 }
 
 .sidebar-user-avatar img {
     width: 64px;
     height: 64px;
-    border-radius: 32px;
+    border-radius: 32px;/**********************************************************/
 }
 
 .sidebar-user-name {
@@ -577,7 +577,7 @@ a.sidebar-title:focus {
     width: 52px;
     height: 52px;
     border-radius: 25px;
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10);/**********************************************************/
 }
 
 .chat-users a span {
@@ -587,7 +587,7 @@ a.sidebar-title:focus {
     width: 6px;
     height: 6px;
     border-radius: 3px;
-    background-color: #cccccc;
+    background-color: #cccccc;/**********************************************************/
 }
 
 .chat-users a img {
@@ -708,7 +708,7 @@ a.sidebar-title:focus {
 .sidebar-nav a.active {
     padding-left: 5px;
     border-left: 5px solid #1bbae1;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);/**********************************************************/
 }
 
 .sidebar-nav a > .sidebar-nav-icon {
@@ -931,10 +931,13 @@ a.sidebar-title:focus {
 
 /* Blocks */
 .block {
+    color: rgb(54, 54, 54);
+    /* text-shadow: -0.4px 0 whitesmoke, 0 0.4px whitesmoke, 0.4px 0 whitesmoke, 0 -0.4px whitesmoke; */
     margin: 0 0 10px;
     padding: 20px 15px 1px;
-    background-color: #ffffff;
-    border: 1px solid #dbe1e8;
+    background-color: #969696;/**********************************************************/
+    border-radius: 20px;
+    /* border: 1px solid #dbe1e8; *//**********************************************************/
 }
 
 .block.full {
@@ -959,9 +962,11 @@ a.sidebar-title:focus {
 }
 
 .block-title {
+    color: whitesmoke;
     margin: -20px -15px 20px;
-    background-color: #f9fafc;
-    border-bottom: 1px solid #eaedf1;
+    background-color: #3d3d3d;/**********************************************************/
+    /* border-bottom: 1px solid #eaedf1; */
+    border-radius: 20px 20px 0px 0px ;/**********************************************************/
 }
 
 .block-title h1,
@@ -986,20 +991,20 @@ a.sidebar-title:focus {
 .block-title h6 small {
     font-size: 13px;
     color: #777777;
-    font-weight: normal;
+    font-weight: normal;/**********************************************************/
 }
 
 .block-title h1,
 .block-title h2,
 .block-title h3 {
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 15px;/**********************************************************/
 }
 
 .block-title .nav-tabs,
 .block-options {
     min-height: 40px;
-    line-height: 38px;
+    line-height: 38px;/**********************************************************/
 }
 
 .block-title .nav-tabs {
@@ -1028,7 +1033,7 @@ a.sidebar-title:focus {
 .block-title .nav-tabs > li.active > a:focus {
     border: 1px solid #eaedf1;
     border-bottom-color: #ffffff;
-    background-color: #ffffff;
+    background-color: #ffffff;/**********************************************************/
 }
 
 .block-title code {
@@ -1069,8 +1074,8 @@ a.sidebar-title:focus {
 
 /* Widgets */
 .widget {
-    background-color: #ffffff;
-    margin-bottom: 10px;
+    background-color: transparent;
+    margin-bottom: 10px;/**********************************************************/
 }
 
 .widget .widget-extra-full,
@@ -1083,15 +1088,15 @@ a.sidebar-title:focus {
     padding-top: 1px;
     padding-bottom: 1px;
 }
-
-.widget .widget-content-light {
+/**********************************************************//**********************************************************/
+/* .widget .widget-content-light {
     color: #ffffff;
 }
 
 .widget .widget-content-light small {
     color: #eeeeee;
-}
-
+} */
+/**********************************************************//**********************************************************/
 .widget .widget-image,
 .widget .widget-icon {
     width: 64px;
@@ -1104,7 +1109,7 @@ a.sidebar-title:focus {
     text-align: center;
     font-size: 28px;
     color: #ffffff;
-    border-radius: 32px;
+    border-radius: 32px;/**********************************************************/
 }
 
 .widget .widget-icon .gi,
@@ -1136,6 +1141,9 @@ a.sidebar-title:focus {
 
 .widget-simple {
     padding: 15px;
+    background-color: #3d3d3d;
+    border-radius: 20px;
+    box-shadow:0px 5px 5px #3a4a7e;/**********************************************************/
 }
 
 .widget-simple:before,
@@ -1169,6 +1177,7 @@ a.sidebar-title:focus {
 }
 
 .widget-simple .widget-content small {
+    color: whitesmoke;
     display: block;
     margin-top: 7px;
     font-size: 13px;
@@ -1201,7 +1210,7 @@ a.sidebar-title:focus {
     width: 100%;
     padding: 15px;
     margin: 0;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);/**********************************************************/
 }
 
 .widget-advanced .widget-main {
@@ -1219,7 +1228,7 @@ a.sidebar-title:focus {
     left: 50%;
     margin-left: -36px;
     border-radius: 36px;
-    background-color: #ffffff;
+    background-color: #ffffff;/**********************************************************/
 }
 
 .widget-advanced .widget-header .widget-image-container {
@@ -1255,22 +1264,22 @@ a.widget:active {
 a.widget.widget-hover-effect1:hover {
     -webkit-transform: translateY(-3px);
     transform: translateY(-3px);
-    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 5px #4e5a85;
+    box-shadow: 0 5px 5px #4e5a85;/**********************************************************/
 }
 
 a.widget.widget-hover-effect1:active {
     -webkit-transform: translateY(-1px);
     transform: translateY(-1px);
-    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 5px 5px #4e5a85;
+    box-shadow: 0 5px 5px #4e5a85;/**********************************************************/
 }
 
 a.widget.widget-hover-effect2:hover {
     -webkit-transform: translateY(0);
     transform: translateY(0);
-    -webkit-box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 5px 5px #4e5a85;
+    box-shadow: 0 5px 5px #4e5a85;/**********************************************************/
 }
 
 a.widget.widget-hover-effect2:active {
