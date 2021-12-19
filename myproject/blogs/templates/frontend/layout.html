@@ -21,6 +21,8 @@
 <!-- Custom styles for this template -->
 <link href="{% static 'frontend/css/style.css' %}" rel="stylesheet">
 <link href="{% static 'frontend/css/stylenav.css' %}" rel="stylesheet">
+<link href="{% static 'frontend/css/styleslide.css' %}" rel="stylesheet">
+
 <!-- Responsive styles for this template -->
 <link href="{% static 'frontend/css/responsive.css' %}" rel="stylesheet">
 
@@ -76,6 +78,16 @@
   </section>
   
 
+  <div id="slider">
+    <a href="#" class="control_next">></a>
+    <a href="#" class="control_prev"><</a>
+    <ul>
+      <li>SLIDE 1</li>
+      <li style="background: #aaa;">SLIDE 2</li>
+      <li>SLIDE 3</li>
+      <li style="background: #aaa;">SLIDE 4</li>
+    </ul>  
+  </div>
 
 
 
@@ -150,6 +162,7 @@
     <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'frontend/js/custom.js' %}"></script>
     <script  src="{% static 'frontend/js/scriptnav.js' %}"></script>
+    <script  src="{% static 'frontend/js/scriptslide.js' %}"></script>
 </body>
 
 </html>
