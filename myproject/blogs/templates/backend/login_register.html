@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--[if IE 9]>         <html class="no-js lt-ie10" lang="en"> <![endif]-->
 <!--[if gt IE 9]><!-->
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" style="background-color: #53608D;">
 <!--<![endif]-->
 
 <head>
@@ -29,42 +29,19 @@
 <body>
     <!-- Login Alternative Row -->
     <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-md-offset-1">
-                <div id="login-alt-container">
-                    <!-- Title -->
-                    <h1 class="push-top-bottom">
-                        <i class="gi gi-flash"></i> <strong>สมัครเป็นนักเขียน</strong><br>
-                        <small>มาแชร์บทความ โดยการสมัครนักเขียนกับเราได้ที่นี่!</small>
-                    </h1>
-                    <!-- END Title -->
-
-                    <!-- Key Features -->
-                    <ul class="fa-ul text-muted">
-                        <li><i class="fa fa-check fa-li text-success"></i> สมัครเป็นนักเขียน</li>
-                        <li><i class="fa fa-check fa-li text-success"></i> เขียนบทความของคุณ</li>
-                        <li><i class="fa fa-check fa-li text-success"></i> แชร์บทความของคุณ</li>
-                    </ul>
-                    <!-- END Key Features -->
-
-                    <!-- Footer -->
-                    <footer class="text-muted push-top-bottom">
-                        <small> &copy; <a href="#" target="_blank">Django Framework | KongRuksiam</Frame></a></small>
-                    </footer>
-                    <!-- END Footer -->
-                </div>
-            </div>
-            <div class="col-md-5">
+        <div class="row" >
+            <div class="col-md-12">
                 <!-- Login Container -->
                 <div id="login-container">
                     <!-- Login Title -->
-                    <div class="login-title text-center">
+                    <div class="login-title text-center" style="background-color: #2c334d; border-radius: 20px 20px 0 0;" >
                         <h1><strong>Login</strong> or <strong>Register</strong></h1>
+
                     </div>
                     <!-- END Login Title -->
 
                     <!-- Login Block -->
-                    <div class="block push-bit">
+                    <div class="block push-bit" style="border-radius: 0 0 20px 20px; background-color: #c9c9c9;">
                         <!-- Login Form -->
                         <form action="{% url 'login' %}" method="post" id="form-login" class="form-horizontal">
                             {% csrf_token %}
