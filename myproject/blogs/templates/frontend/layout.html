@@ -136,7 +136,7 @@
                                     {%for sugges in suggestion%}
                                     <a href="{%url 'blogDetail' sugges.id%}" class="list-group-item list-group-item-action flex-column align-items-start">
                                         <div class="w-100 justify-content-between">
-                                            <img src="{{sugges.image.url}}" alt="" class="img-fluid float-left">
+                                            <img src="{{sugges.image.url}}" alt="" style="border-radius: 5px;" class="img-fluid float-left">
                                             <h5 class="mb-1">{{sugges.name}}</h5>
                                             <small>{{sugges.created}}</small>
                                         </div>
