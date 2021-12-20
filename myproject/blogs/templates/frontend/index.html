@@ -1,7 +1,39 @@
 {% extends "frontend/layout.html"%} {% load humanize%}{% block content%}
+<div id="slider">
+    <a href="#" class="control_next">></a>
+    <a href="#" class="control_prev"><</a>
+    <ul>
+      {% for blog in lastest%}
+      <li> 
+        <a href="{%url 'blogDetail' blog.id%}"  title="">
+        <img src="{{blog.image.url}}" alt="" class="img-fluid">
+            <div class="shadoweffect">
+                <div class="shadow-desc">
+                    <div class="blog-meta">
+                        <!-- <span class="bg-orange"><a href="{%url 'searchCategory' blog.category_id%}" title="">{{blog.category}}</a></span>
+                        <h4><a href="{%url 'blogDetail' blog.id%}" title="">{{blog.name}}</a></h4>
+                        <small><a href="#" title="">{{blog.created}}</a></small>
+                        <small><a href="{%url 'searchWriter' blog.writer%}" title="">by {{blog.writer}}</a></small>
+                        <small><a href="#" title=""><i class="fa fa-eye"></i>{{blog.views | intcomma}}</a></small> -->
+                        <p style="color: aliceblue;">{{blog.name}}  by {{blog.writer}} <i class="fa fa-eye"></i> {{blog.views | intcomma}}   </p>
+                    </div>
+                    <!-- end meta -->
+                </div>
+                <!-- end shadow-desc -->
+            </div>
+          </a>
+          </li>
+      {% endfor%}
+    </ul>  
+  </div>
+
+
+
+
 <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
     <div class="page-wrapper">
         <div class="blog-top clearfix">
+            <br>
             <h4 class="pull-left">บทความทั้งหมด <a href="#"><i class="fa fa-rss"></i></a></h4>
         </div>
         <!-- end blog-top -->
