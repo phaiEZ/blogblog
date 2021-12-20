@@ -142,6 +142,30 @@ def searchWriter(request, writer):
     )
 
 
+def searchName(request):
+    allBlogs = Blogs.objects.all()
+    name = request.GET["text1"]
+    blogs = []
+    print(allBlogs[0])
+    for i in allBlogs:  # ใช้ linearsearch หาบทความตามชื่อผู้เขียน
+        if name in i.name:
+            blogs.append(i)
+    categories = Category.objects.all()
+    popular = Blogs.objects.all().order_by("-views")[:3]
+    suggestion = Blogs.objects.all().order_by("views")[:3]
+    return render(
+        request,
+        "frontend/searchName.html",
+        {
+            "blogs": blogs,
+            "popular": popular,
+            "categories": categories,
+            "suggestion": suggestion,
+            "name": name,
+        },
+    )
+
+
 def insertionSort(arr):
     for i in range(1, len(arr)):
 

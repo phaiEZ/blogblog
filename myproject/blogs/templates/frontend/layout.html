@@ -38,45 +38,48 @@
 
 
 
-<body><section class="navigation">
-    <div class="nav-container">
-      <div class="brand">
-        <a href="/">Blog Blog</a>
-      </div>
-      <nav>
-        <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li>
-            <a href="/">Home</a>
-          </li>
+<body>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="/">Blog Blog</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
 
-          <li>
-            <a href="#!">Catagory</a>
-            <ul class="nav-dropdown">
-                    {% for category in categories%}
-                    <li><a href="{%url 'searchCategory' category.id%}">{{category.name}}<span></span></a></li>
-                    {% endfor%}
-            </ul>
-          </li>
-          <li>
-            <a href="/admin">Admin</a>
-          </li>
-          <li>
-            <a href="{% url 'member' %}">Writer</a>
-          </li>
-          <li>
-            <div class="search" >
-                <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search"></i>
-               </button>
-             </div>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-  
+                    <li>
+                        <a href="#!">Catagory</a>
+                        <ul class="nav-dropdown">
+                            {% for category in categories%}
+                            <li><a href="{%url 'searchCategory' category.id%}">{{category.name}}<span></span></a></li>
+                            {% endfor%}
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/admin">Admin</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'member' %}">Writer</a>
+                    </li>
+                    <li>
+                        <form action="searchName">
+                            <div class="search">
+                                <input type="text" class="searchTerm" name="text1" placeholder="What are you looking for?">
+                                <input type="submit" class="searchButton">
+                                <i class="fa fa-search"></i>
+                                </button>
+                        </form>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
 
 
 
@@ -147,56 +150,56 @@
         <!-- end container -->
     </section>
     <footer class="footer">
-      <div class="container">
-          <div class="row">
-              <div class="col-lg-7">
-                  <div class="widget">
-                      <div class="footer-text text-left">
-                          <p style="font-size: 30px; ">BLOG BLOG</p>
-                          <p>โครงงาน BLOG BLOG เป็นส่วนหนึ่งของวิชา Data Structures and Algorithm (รหัสวิชา 01076005) เพื่อศึกษาและหาความรู้เกี่ยวกับ Data Structures และ Algorithm ต่าง ๆ เพื่อนำมาประยุกต์ใช้ในการทำ Application ด้วยการใช้ภาษา Python เป็นภาษาหลักในการประมวลผล
-                            การจัดทำโครงงานนี้นั้นสำเร็จลุล่วงไปได้ด้วยดี ข้าพเจ้าหวังเป็นอย่างยิ่งว่าโครงงานชิ้นนี้จะเกิดประโยชน์กับบุคคลที่จะใช้ศึกษาต่อ หากมีสิ่งใดผิดพลาดในรายงานและโครงงานนี้ ทางคณะผู้จัดขอน้อมรับผิดและจะนำข้อผิดพลาดนนมาปรบปรงแกไขเพอพฒนาตอไป</p>
-                          <hr class="invis">
-                          <!-- end newsletter -->
-                      </div>
-                      <!-- end footer-text -->
-                  </div>
-                  <!-- end widget -->
-              </div>
-              <!-- end col -->
-              <div class="col-lg-4 col-md-15 col-sm-12 col-xs-12">
-                  <div class="widget">
-                      <h2 class="widget-title">developer</h2>
-                      <div class="link-widget">
-                          <ul>
-                              <li><a href="#">63010200 Chayut Phunpet</a></li>
-                              <li><a href="#">63010270 Nakanokpol Sombattheera</a></li>
-                              <li><a href="#">63010200 chayut</a></li>
-                              <li><a href="#">63010200 chayut</a></li>
-                              <li><a href="#">63010200 chayut</a></li>
-                          </ul>
-                      </div>
-                      <!-- end link-widget -->
-                  </div>
-                  <!-- end widget -->
-              </div>
-              <!-- end col -->
-              <!-- end col -->
-          </div>
-          <div class="row">
-              <div class="col-md-12 text-center">
-                  <br>
-                  <div class="copyright">KMITL. สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a>.</div>
-              </div>
-          </div>
-      </div>
-      <!-- end container -->
-  </footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="widget">
+                        <div class="footer-text text-left">
+                            <p style="font-size: 30px; ">BLOG BLOG</p>
+                            <p>โครงงาน BLOG BLOG เป็นส่วนหนึ่งของวิชา Data Structures and Algorithm (รหัสวิชา 01076005) เพื่อศึกษาและหาความรู้เกี่ยวกับ Data Structures และ Algorithm ต่าง ๆ เพื่อนำมาประยุกต์ใช้ในการทำ Application ด้วยการใช้ภาษา Python เป็นภาษาหลักในการประมวลผล
+                                การจัดทำโครงงานนี้นั้นสำเร็จลุล่วงไปได้ด้วยดี ข้าพเจ้าหวังเป็นอย่างยิ่งว่าโครงงานชิ้นนี้จะเกิดประโยชน์กับบุคคลที่จะใช้ศึกษาต่อ หากมีสิ่งใดผิดพลาดในรายงานและโครงงานนี้ ทางคณะผู้จัดขอน้อมรับผิดและจะนำข้อผิดพลาดนนมาปรบปรงแกไขเพอพฒนาตอไป</p>
+                            <hr class="invis">
+                            <!-- end newsletter -->
+                        </div>
+                        <!-- end footer-text -->
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+                <div class="col-lg-4 col-md-15 col-sm-12 col-xs-12">
+                    <div class="widget">
+                        <h2 class="widget-title">developer</h2>
+                        <div class="link-widget">
+                            <ul>
+                                <li><a href="#">63010200 Chayut Phunpet</a></li>
+                                <li><a href="#">63010270 Nakanokpol Sombattheera</a></li>
+                                <li><a href="#">63010200 chayut</a></li>
+                                <li><a href="#">63010200 chayut</a></li>
+                                <li><a href="#">63010200 chayut</a></li>
+                            </ul>
+                        </div>
+                        <!-- end link-widget -->
+                    </div>
+                    <!-- end widget -->
+                </div>
+                <!-- end col -->
+                <!-- end col -->
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <br>
+                    <div class="copyright">KMITL. สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</a>.</div>
+                </div>
+            </div>
+        </div>
+        <!-- end container -->
+    </footer>
     <script src="{% static 'frontend/js/jquery.min.js' %}"></script>
     <script src="{% static 'frontend/js/tether.min.js' %}"></script>
     <script src="{% static 'frontend/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'frontend/js/custom.js' %}"></script>
-    <script  src="{% static 'frontend/js/scriptnav.js' %}"></script>
-    <script  src="{% static 'frontend/js/scriptslide.js' %}"></script>
+    <script src="{% static 'frontend/js/scriptnav.js' %}"></script>
+    <script src="{% static 'frontend/js/scriptslide.js' %}"></script>
 </body>
 
 </html>
